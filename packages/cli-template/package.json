@@ -1,0 +1,35 @@
+{
+  "name": "cli-template",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "濯茶 <xunxing.mxx@alibaba-inc.com>",
+  "homepage": "https://github.com/XingMXTeam/frontend-templates#readme",
+  "license": "ISC",
+  "main": "lib/cli-template.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "bin": {
+    "cliTemplate": "bin/index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npm.alibaba-inc.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XingMXTeam/frontend-templates.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/XingMXTeam/frontend-templates/issues"
+  },
+  "dependencies": {
+    "commander": "^9.2.0"
+  }
+}
