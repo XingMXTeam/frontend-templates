@@ -21,6 +21,7 @@
     "url": "git+https://github.com/XingMXTeam/frontend-templates.git"
   },
   "scripts": {
+    "tsc": "tsc",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {

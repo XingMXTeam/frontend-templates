@@ -9,7 +9,8 @@ class TargetAppDemo {
   private context
   constructor() {
     this.context = {
-      flow: new Flow()
+      flow: new Flow(),
+      plugins: []
     }
 
     // context used in plugins
@@ -19,11 +20,23 @@ class TargetAppDemo {
     this.plugin.use(MyPlugin)
   }
 
-  test() {
+  testCb() {
     // when run test, you will run all `lifeCircleMethod` methods in plugins
     this.context.flow.runCallBacks('lifeCircleMethod', {})
   }
+
+  testInjectedMethod() {
+    let newProps = {} as any
+    for(const cb of this.context.flow.iterateCallbacks('injectMethod')) {
+      newProps = cb({ type: 'x', props: newProps})
+    }
+    newProps.injectedMethod()
+  }
+
 }
 
 
+const demo = new TargetAppDemo()
+demo.testCb()
+demo.testInjectedMethod()
 
