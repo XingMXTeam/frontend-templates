@@ -1,5 +1,5 @@
 import Plugin from '../lib'
-import MyPlugin from '../lib/myPlugin'
+import MyPlugin from './myPlugin'
 import Flow from '../lib/flow'
 
 // this is TargetApp which use plugins

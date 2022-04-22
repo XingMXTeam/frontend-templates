@@ -1,5 +1,5 @@
 // this is demo plugin
-import { BasePlugin } from './interface'
+import { BasePlugin } from '../lib/interface'
 class MyPlugin implements BasePlugin {
   injectMethod = ({ type, props }: { type: string, props: any }) => {
     return {

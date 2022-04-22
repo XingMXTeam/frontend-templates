@@ -1,4 +1,5 @@
 import { BasePlugin } from "./interface";
+
 export interface PluginConstructor {
   new(): BasePlugin
 }
